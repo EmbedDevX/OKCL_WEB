@@ -25,7 +25,7 @@ clear_table.addEventListener("click" , (e) => {
 
 form.addEventListener("submit" , (e) => {
     e.preventDefault();
-    fetch("http://localhost:5000/register" , {
+    fetch("http://4.193.100.251:5000/register" , {
         method:'POST',
         headers:{ 'Content-type' : 'application/json' },
         body:JSON.stringify({
