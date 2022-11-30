@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <title>Soul Help Desk</title>
 </head>
@@ -21,45 +24,49 @@
             <button class="btn">Submit</button>
         </form>
     </div>
-
-    <table class="content-table">
-        <thead>
-            <tr>
-                <th>Serial No.</th>
-                <th>Amount</th>
-                <th>Sender</th>
-                <th>Account No.</th>
-                <th>Benefit Account No.</th>
-                <th>Benefit Name</th>
-                <th>Benefit Bank</th>
-                <th>Ifsc Code</th>
-                <th>Phone Number</th>
-                <th>Days Attended</th>
-                <th>District</th>
-                <th>Txn Ref No.</th>
-                <th>Host Ref No.</th>
-                <!-- <th>Application Number</th> -->
-            </tr>
-        </thead>
-        <tbody id="table">
-            <tr>
-                <td>1</td>
-                <td>741258963</td>
-                <td>Something</td>
-                <td>Someone</td>
-                <td>Quote</td>
-                <td>75</td>
-                <td>96325</td>
-                <td>7/8/22</td>
-                <td>3/9/22</td>
-                <td>sd56as4</td>
-                <td>4s56d4a56s</td>
-                <td>4d564as56</td>
-                <td>4d56s4a56</td>
-                <!-- <td>4d564sa5</td> -->
-            </tr>
-        </tbody>
-    </table>
+    <div class="container">
+        <div class="icon-container" id="clear-table">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+        <table class="content-table">
+            <thead>
+                <tr>
+                    <th>Serial No.</th>
+                    <th>Amount</th>
+                    <th>Sender</th>
+                    <th>Account No.</th>
+                    <th>Benefit Account No.</th>
+                    <th>Benefit Name</th>
+                    <th>Benefit Bank</th>
+                    <th>Ifsc Code</th>
+                    <th>Phone Number</th>
+                    <th>Days Attended</th>
+                    <th>District</th>
+                    <th>Txn Ref No.</th>
+                    <th>Host Ref No.</th>
+                    <!-- <th>Application Number</th> -->
+                </tr>
+            </thead>
+            <tbody id="table">
+                <tr>
+                    <td>1</td>
+                    <td>741258963</td>
+                    <td>Something</td>
+                    <td>Someone</td>
+                    <td>Quote</td>
+                    <td>75</td>
+                    <td>96325</td>
+                    <td>7/8/22</td>
+                    <td>3/9/22</td>
+                    <td>sd56as4</td>
+                    <td>4s56d4a56s</td>
+                    <td>4d564as56</td>
+                    <td>4d56s4a56</td>
+                    <!-- <td>4d564sa5</td> -->
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
     <script src="script.js"></script>
 </body>

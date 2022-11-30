@@ -96,7 +96,22 @@ label{
 .btn:hover {
     transform: scale(1.1);
 }
-
+.container{
+    position: relative;
+}
+.icon-container{
+    position: absolute;
+    left: 98%;
+    background-color: var(--incomplete);
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 4px;
+    font-size: 20px;
+}
+.icon-container:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
 /*Table*/
 .content-table {
     margin: 40px 0;

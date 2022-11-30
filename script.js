@@ -2,11 +2,30 @@ const form = document.querySelector("#form");
 const phone_num = document.querySelector("#phone-num")
 const acc_num = document.querySelector("#acc-num")
 const table = document.querySelector("#table")
+const clear_table = document.querySelector("#clear-table")
 
 table.children[0].remove();
+
+function table_render(data) {
+    // console.log(table.children[0].children)
+    const table_row = document.createElement('tr')
+    for (let d of data) {
+        let table_data = document.createElement('td')
+        table_data.innerText = d
+        table_row.appendChild(table_data)
+    }
+    console.log(table_row)
+    table.appendChild(table_row)
+}
+
+clear_table.addEventListener("click" , (e) => {
+    e.preventDefault();
+    table.children[0].remove();
+})
+
 form.addEventListener("submit" , (e) => {
     e.preventDefault();
-    fetch("http://4.193.100.251:5000/register" , {
+    fetch("http://localhost:5000/register" , {
         method:'POST',
         headers:{ 'Content-type' : 'application/json' },
         body:JSON.stringify({
@@ -28,14 +47,3 @@ form.addEventListener("submit" , (e) => {
     .catch(err => console.log(err))
 })
 
-function table_render(data) {
-    // console.log(table.children[0].children)
-    const table_row = document.createElement('tr')
-    for( let d of data){
-        let table_data = document.createElement('td')
-        table_data.innerText = d
-        table_row.appendChild(table_data)
-    }
-    console.log(table_row)
-    table.appendChild(table_row)
-}
